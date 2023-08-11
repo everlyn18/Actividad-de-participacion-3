@@ -3,5 +3,13 @@ class Punto:
         self.x = x
         self.y = y
 
-    def __str__(self):
-        return({self.x}, {self.y})
+    def mostrar(self):
+        print(f"Coordenadas del punto: ({self.x}, {self.y})")
+    
+    def mover(self, nuevo_x, nuevo_y):
+        self.x = nuevo_x
+        self.y = nuevo_y
+
+    def calcular_distancia(self, otro_punto):
+        distancia =math.sqrt((self.x - otro_punto.x)**2+(self.y - otro_punto.y)**2)
+        return distancia
