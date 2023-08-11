@@ -1,6 +1,6 @@
-class Punto:
-    def __init__(self, x , y):
-        self.x = x
-        self.y = y
-        
+class Circulo:
+    def __init__(self, centro, radio):
+        self.centro = centro
+        self.radio = radio
 
+   
